@@ -29,8 +29,9 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             className="flex-shrink-0"
           >
-            <Link href="#home" className="text-2xl font-bold text-primary">
-              IAJ
+            <Link href="#home" className="text-xl font-bold text-primary">
+              Katpana Desert
+              <span className="text-sm block text-gray-600 dark:text-gray-400">(My Favorite Place)</span>
             </Link>
           </motion.div>
 
