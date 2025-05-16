@@ -117,7 +117,7 @@ export default function Hero() {
           className="text-center"
         >
           {/* Profile Image */}
-          <motion.div
+          {/* <motion.div
             className="relative w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white/20 backdrop-blur-sm"
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
@@ -130,14 +130,13 @@ export default function Hero() {
               className="object-cover"
               priority
             />
-          </motion.div>
+          </motion.div> */}
 
           <motion.h1
             variants={itemVariants}
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg"
           >
-            Katpana Desert
-          </motion.h1>
+Ishaq Ali Johari          </motion.h1>
           
           <motion.h2
             variants={itemVariants}
