@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -101,6 +102,19 @@ export default function RootLayout({
           }}
         />
       </head>
+      <Script id="tawk-script" strategy="lazyOnload">
+         {`
+var Tawk_API="8f285011eddf8485345fd87128d6cae2ceba69b2"||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/682aff1bf062c51916e086d7/1irjv91q1';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+         `}
+      </Script>
       <body className={inter.className}>{children}</body>
     </html>
   )
